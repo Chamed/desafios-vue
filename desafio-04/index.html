@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+	<title>Desafio 04</title>
+</head>
+<body>
+	<!-- 1) Listar todos produtos na table utilizando metodos de renderização em lista -->
+
+	<div id="app">
+		<div style="display: flex; align-items: center; flex-direction: column;">
+			<table>
+				<h1>Lista de Produtos</h1>
+				<thead>
+					<tr>
+						<th></th>
+						<th>ID do produto</th>
+						<th>Descrição</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+			
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>ID</td>
+						<td>DESCRICAO</td>
+						<td>VALOR</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+
+<script src="app.js"></script>
+
+<style>
+	.pesquisa{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	body {
+  font: 75%/1.6 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 50em;
+  border: 1px solid #666;
+}
+thead {
+  background: #ccc url(https://www.devfuria.com.br/html-css/tabelas/bar.gif) repeat-x left center;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+tr:nth-child(even) {
+    background-color: #edf5ff;
+}
+th {
+  font-weight: normal;
+  text-align: left;
+}
+th, td {
+  padding: 0.1em 1em;
+}
+</style>
+
